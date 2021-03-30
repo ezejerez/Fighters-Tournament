@@ -1,49 +1,49 @@
-const tournament = require("./src/tournament")
+const tournament = require('./src/tournament');
 
 const fighters = [
   {
-    name: "WOS",
+    name: 'WOS',
     hp: 10,
     damage: [1, 2],
   },
 
   {
-    name: "Trueno",
+    name: 'Trueno',
     hp: 20,
     damage: [2, 3],
   },
 
   {
-    name: "Lit Killah",
+    name: 'Lit Killah',
     hp: 30,
     damage: [3, 4],
   },
 
   {
-    name: "Neo Pistea",
+    name: 'Neo Pistea',
     hp: 40,
     damage: [2, 3],
   },
 
   {
-    name: "PussyDestroyer666",
+    name: 'Ezequiel Jerez',
     hp: 1000,
     damage: [5, 6],
   },
 
   {
-    name: "YSY a",
+    name: 'YSY a',
     hp: 50,
     damage: [1, 2],
   },
   {
-    name: "C.R.O",
+    name: 'C.R.O',
     hp: 60,
     damage: [2, 3],
   },
 
   {
-    name: "Duki",
+    name: 'Duki',
     hp: 70,
     damage: [3, 4],
   },

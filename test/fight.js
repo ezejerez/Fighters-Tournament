@@ -1,39 +1,39 @@
-const fight = require("./../src/fight");
+const fight = require('./../src/fight');
 
-const expect = require("chai").expect;
+const expect = require('chai').expect;
 
-describe("Fight suite", () => {
-  it("Deberá ganar Pepe y deberá perder Juan", () => {
+describe('Fight suite', () => {
+  it('Pepe must win and Juan must lose', () => {
     const pepe = {
-      name: "Pepe",
+      name: 'Pepe',
       hp: 100,
       damage: [3, 4],
     };
 
     const juan = {
-      name: "Juan",
+      name: 'Juan',
       hp: 50,
       damage: [1, 2],
     };
 
     expect(fight(pepe, juan)).to.deep.equal({
-      winner: "Pepe",
-      loser: "Juan",
+      winner: 'Pepe',
+      loser: 'Juan',
       tie: false,
     });
-  }); // Gana solo uno o el otro.
+  }); // Win just one or the other.
 
   /*-----------------------*/
 
-  it("La pelea entre Pepe y Juan deberá resultar en empate", () => {
+  it('The fight between Pepe and Juan must result in a draw', () => {
     const pepe = {
-      name: "Pepe",
+      name: 'Pepe',
       hp: 100,
       damage: [10, 10],
     };
 
     const juan = {
-      name: "Juan",
+      name: 'Juan',
       hp: 100,
       damage: [10, 10],
     };
@@ -43,5 +43,5 @@ describe("Fight suite", () => {
       loser: null,
       tie: true,
     });
-  }); // Empate.
+  }); // Draw.
 });
